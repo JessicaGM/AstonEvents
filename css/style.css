@@ -1,0 +1,475 @@
+/* general formatting for all pages */
+body {
+  background-color: #f0f0f0;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+h1 {
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  margin-bottom: 1em;
+}
+
+.container {
+  min-height: 100%;
+  padding-top: 20px;
+}
+
+/* footer */
+.footer {
+  background-color: #f0f0f0;
+  bottom: 0;
+  left: 0;
+  padding: 0.8em;
+  position: fixed;
+  right: 0;
+  text-align: left;
+}
+
+/* social icons */
+.social_media {
+  float: right;
+  font-size: 1.2em;
+}
+
+.social_media :hover {
+  color: #83008f;
+}
+
+span a {
+  padding-left: 0.4em;
+}
+
+/* hero banner background, homepage */
+.hero {
+  background-image: url('images/aston-campus.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 90vh;
+  text-align: center;
+  width: 100%;
+}
+
+/* hero banner text, homepage */
+.hero-text {
+  background: rgba(107, 107, 157, 0.8);
+  border: 2px solid;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 380px;
+  margin-left: 80px;
+  margin-top: 50px;
+  padding: 25px;
+  position: absolute;
+}
+
+/* hero banner button, homepage */
+.hero .btn {
+  background-color: #f0f0f0;
+  color: black;
+  display: block;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+}
+
+/* hero banner button on hover, homepage */
+.hero .btn:hover {
+  background-color: #83008f;
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* about us formatting, homepage */
+.about-title {
+  color: #83008f;
+  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 40px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row-about {
+  background-color: white;
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em auto;
+  max-width: 80em;
+  padding: 1em;
+}
+
+@media (min-width: 40rem) {
+  .row-about div {
+    flex: 0 0 50%;
+    padding: 1em;
+  }
+}
+
+.row-about img {
+  height: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+
+figcaption {
+  border-left: 3px solid #83008f;
+  color: black;
+  font-family: serif;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 0.6em;
+  padding-left: 1em;
+}
+
+/* events page header */
+.header {
+  background-image: url('images/birmingham-cityscape.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 30px;
+  text-align: left;
+}
+
+/* events page selector */
+.form-selectors {
+  background-color: rgba(240, 240, 240, 0.8);
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+  color: black;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+/* events list formatting */
+.events {
+  background-color: white;
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px auto;
+  padding: 20px 20px;
+}
+
+@media (min-width: 768px) {
+  .events {
+    flex-direction: row;
+  }
+}
+
+.events:hover {
+  box-shadow: 0 0 10px #450969;
+}
+
+.date {
+  background-color: #460869;
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  margin: -20px -20px 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .date {
+    align-self: stretch;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: -20px 20px -20px -20px;
+    padding: 40px;
+    width: 200px;
+  }
+}
+
+.events:hover .date {
+  background: #83008f;
+}
+
+.day {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+.event_name {
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.view {
+  font-weight: bold;
+  margin: -20px -20px -20px -20px;
+  padding: 10px;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .view {
+    align-self: stretch;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-top: 10em;
+  }
+}
+
+.events:hover .view a {
+  color: #83008f;
+}
+
+.view a:visited {
+  color: #b5a4b6;
+}
+
+.description {
+  width: 100%;
+}
+
+/* for each event page e.g. history, football, arts...*/
+.event {
+  background-color: white;
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .event {
+    flex-direction: row;
+  }
+}
+
+.visuals {
+  background-color: #83008f;
+  padding: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .visuals {
+    align-self: stretch;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 300px;
+  }
+}
+
+.visuals img {
+  max-height: 300px;
+}
+
+.like {
+  background-color: white;
+  max-width: 300px;
+  padding: 10px 6px 10px 6px;
+  text-align: left;
+}
+
+.btn-like {
+  border: 2px solid #cccccc;
+  border-radius: 6px;
+  color: black;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-like:hover {
+  border-color: rgb(186, 0, 0);
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.btn-like:hover .fa-heart {
+  color: rgb(186, 0, 0);
+}
+
+.btn-liked, .btn-liked:hover {
+  background-color: white;
+  border: 2px solid rgb(186, 0, 0);
+  border-radius: 6px;
+  color: rgb(186, 0, 0);
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-liked .fa-heart {
+  color: rgb(186, 0, 0);
+}
+
+.information a:hover {
+  color: #83008f;
+}
+
+.information a:visited {
+  color: #b5a4b6;
+}
+
+.content {
+  padding: 40px;
+  width: 100%;
+}
+
+.button-book, .button-confirm {
+  background-color: #460869;
+  border-color: black;
+}
+
+.button-book:hover, .button-confirm:hover {
+  background-color: #83008f;
+  border-color: black;
+}
+
+/* sign up and login form */
+.label-group {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.form {
+  margin: auto;
+  max-width: 400px;
+}
+
+/* login and signup form page */
+.hrefSignup:hover a, .hrefLogin:hover a {
+  color: #83008f;
+}
+
+.hrefSignup a, .hrefLogin a {
+  color: #b5a4b6;
+}
+
+#signup, #login {
+  background-color: #460869;
+  border-color: black;
+}
+
+#signup:hover, #login:hover {
+  background-color: #83008f;
+  border-color: black;
+}
+
+/* sign up validation errors */
+.error {
+  color: red;
+}
+
+/* table for profile page */
+.table_user_events {
+  background-color: white;
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.table_user_events td, th {
+  border: 1px solid #000000;
+  padding: 6px;
+}
+
+.table_user_events th {
+  background-color: #83008f;
+  color: white;
+}
+
+.table_user_events tr:hover {
+  background-color: #e2e1e3;
+}
+
+@media only screen and (max-width: 64em) {
+  .table_user_events table, thead, th, td, tr {
+    display: block;
+  }
+
+  .table_user_events thead tr {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+  }
+
+  .table_user_events tr {
+    border: 1px solid #000000;
+  }
+
+  .table_user_events td {
+    border: none;
+    border-bottom: 1px solid #8f8f8f;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .table_user_events tbody td:first-child {
+    background-color: #83008f;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.profile-sort-button {
+  background-color: white;
+  border: 2px solid #83008f;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.profile-sort-button:hover {
+  background-color: #83008f;
+  color: white;
+}
+
+/* 404 not found page */
+.notfound {
+  background-image: url('images/goose.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 3000px rgba(205, 113, 255, 0.3) inset;
+  color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+.notfound-header1 {
+  font-size: 180px;
+}
+
+.notfound-header2 {
+  font-size: 40px;
+}
+
+.notfound p {
+  font-size: 20px;
+}
+
+.button-404 {
+  background-color: white;
+  color: black;
+}
+
+.button-404:hover {
+  background-color: #83008f;
+  color: white;
+}
